@@ -15,10 +15,7 @@ st.write("Upload a PDF and I'll convert it to a high-quality neural voice withou
 st.sidebar.header("Voice Settings")
 voice_map = {
     "Male (US)": "en-US-GuyNeural",
-    "Female (US)": "en-US-AriaNeural",
-    "Female (UK)": "en-GB-SoniaNeural",
-    "Male (UK)": "en-GB-RyanNeural",
-    "Female (AUS)": "en-AU-NatashaNeural"
+    "Female (US)": "en-US-AriaNeural"
 }
 
 selection = st.sidebar.selectbox("Choose a Voice Persona", list(voice_map.keys()))
@@ -86,3 +83,4 @@ if uploaded_file is not None:
 # --- FOOTER ---
 st.divider()
 st.caption("Powered by Microsoft Edge Neural TTS and Streamlit.")
+
